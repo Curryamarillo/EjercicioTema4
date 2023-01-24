@@ -10,5 +10,19 @@ public class SmartWatch extends SmartDevice {
         super(fabricante, modelo, sistemaOperativo, sinceYear, sumergible, usbC);
         this.sensorLatidos = sensorLatidos;
         this.materialCorrea = materialCorrea;
-}
+    }
+
+    @Override
+    public String toString() {
+        return "SmartWatch{" +
+                "sensorLatidos=" + sensorLatidos +
+                ", materialCorrea='" + materialCorrea + '\'' +
+                ", fabricante='" + fabricante + '\'' +
+                ", modelo='" + modelo + '\'' +
+                ", sistemaOperativo='" + sistemaOperativo + '\'' +
+                ", sinceYear=" + sinceYear +
+                ", sumergible=" + sumergible +
+                ", usbC=" + usbC +
+                '}';
+    }
 }
